@@ -1,11 +1,10 @@
-.env
+.env*
 .git
 .gitattributes
 .github
 .gitignore
-action.yml
 Dockerfile
 LICENSE
-README.md
+*.md
 renovate.json
 target
