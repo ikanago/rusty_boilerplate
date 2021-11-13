@@ -3,9 +3,6 @@ name: 'CI'
 on:
   push:
   pull_request:
-    branches:
-      - main
-      - 'releases/*'
 
 env:
   CARGO_INCREMENTAL: 0
