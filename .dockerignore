@@ -1,0 +1,11 @@
+.env
+.git
+.gitattributes
+.github
+.gitignore
+action.yml
+Dockerfile
+LICENSE
+README.md
+renovate.json
+target
