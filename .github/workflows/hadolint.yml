@@ -1,0 +1,16 @@
+name: hadolint
+
+on:
+  pull_request:
+    paths:
+      - Dockerfile
+      - .github/workflows/hadolint.yml
+
+jobs:
+  lint:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run hadolint
+        uses: reviewdog/action-hadolint@v1
