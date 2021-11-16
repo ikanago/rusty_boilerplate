@@ -1,4 +1,4 @@
-name: 'action lint'
+name: 'actionlint'
 
 on:
   pull_request:
@@ -13,3 +13,6 @@ jobs:
 
       - name: Run actionlint
         uses: reviewdog/action-actionlint@v1
+        with:
+          reporter: 'github-pr-review'
+          fail_on_error: true
