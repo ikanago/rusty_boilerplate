@@ -27,7 +27,7 @@ jobs:
         run: cargo fmt -- --check
 
       - name: Build
-        run: cargo build --verbose
+        run: cargo build --locked --verbose
 
       - run: rustup component add clippy
       - uses: actions-rs/clippy-check@v1
