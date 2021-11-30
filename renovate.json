@@ -8,6 +8,11 @@
   ],
   "packageRules": [
     {
+      "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": ["patch"],
+      "automerge": true
+    },
+    {
       "matchDepTypes": ["devDependencies"],
       "rangeStrategy": "pin",
       "automerge": true
