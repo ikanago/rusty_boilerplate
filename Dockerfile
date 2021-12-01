@@ -1,6 +1,4 @@
-FROM rust:1.56 AS chef
-RUN cargo install cargo-chef \
-    && rm -rf "${CARGO_HOME}/registry"
+FROM lukemathwalker/cargo-chef:0.1.33-rust-1.56.1-slim-buster AS chef
 
 FROM chef AS planner
 WORKDIR /plan
