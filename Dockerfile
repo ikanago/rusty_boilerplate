@@ -12,6 +12,6 @@ RUN cargo chef cook --release --recipe-path recipe.json
 COPY . .
 RUN cargo build --release
 
-FROM gcr.io/distroless/cc@sha256:442431d783e435ff0954d2a8214231e3da91ce392c65c1138c0bcdbc77420116
+FROM gcr.io/distroless/cc@sha256:b82f113425c5b5c714151aaacd8039bc141821cdcd3c65202d42bdf9c43ae60b
 COPY --from=builder /build/target/release/main /
 ENTRYPOINT ["/main"]
